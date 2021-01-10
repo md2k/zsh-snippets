@@ -21,7 +21,7 @@ __az_init() {
 }
 
 _az () {
-  complete -o nospace -o default -o bashdefault -F _python_argcomplete "az"
+  complete -o nospace -o default -o bashdefault -F __az_init "az"
 }
 
 _az "$@"
